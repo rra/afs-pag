@@ -1,0 +1,8 @@
+                      User-Visible AFS::PAG Changes
+
+1.00 (2013-09-12)
+
+    Initial public release with support for libkafs, libkopenafs, and
+    Linux systems with no support library.  pioctl is not yet supported,
+    only hasafs, haspag, setpag, and unlog.  The build system has only
+    been tested on Debian.
