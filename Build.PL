@@ -122,6 +122,7 @@ sub config_kafs {
 # Basic package configuration.
 my $build = Module::Build->new(
     module_name          => 'AFS::PAG',
+    dist_version_from    => 'lib/AFS/PAG.pm',
     dist_author          => 'Russ Allbery <rra@stanford.edu>',
     license              => 'mit',
     recursive_test_files => 1,
