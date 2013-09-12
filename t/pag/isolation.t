@@ -44,8 +44,8 @@ BEGIN { use_ok('AFS::PAG', qw(hasafs setpag unlog)) }
 #
 # Returns: True if the user has valid tokens, false if not or if tokens fails
 sub has_tokens {
-    my $tokens = capturex('tokens');
-    if ($tokens =~ m{ [ ] tokens [ ] for [ ] }xmsi) {
+    my $tokens = eval { capturex('tokens') };
+    if (!$@ && $tokens =~ m{ [ ] tokens [ ] for [ ] }xmsi) {
         return 1;
     } else {
         return;
