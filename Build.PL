@@ -77,6 +77,13 @@ sub config_kafs {
     # Checks needed by all libkafs code.
     $config->check_header('sys/ioccom.h');
 
+    # If the user passed extra flags into Build.PL, use them for probes.
+    if ($build->extra_linker_flags) {
+        my $flags = $build->extra_linker_flags;
+        my @flags = ref($flags) ? @{$flags} : ($flags);
+        $config->push_link_flags(@flags);
+    }
+
     # Check if we have a library available to us.  If so, check whether it
     # provides k_pioctl and k_haspag and then return.
     my $lib = $config->search_libs('k_hasafs', ['kafs', 'kopenafs']);
