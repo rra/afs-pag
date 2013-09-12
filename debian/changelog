@@ -2,5 +2,5 @@ libafs-pag-perl (1.00-1) unstable; urgency=low
 
   * Initial version.  (Closes: #722626)
 
- -- Russ Allbery <rra@debian.org>  Thu, 12 Sep 2013 14:33:13 -0700
+ -- Russ Allbery <rra@debian.org>  Thu, 12 Sep 2013 15:11:14 -0700
 
