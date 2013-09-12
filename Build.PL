@@ -83,7 +83,7 @@ sub config_kafs {
     my @files;
     if ($lib) {
         my $flags = $build->extra_linker_flags;
-        my @flags = ref($flags) ? @$flags : ($flags);
+        my @flags = ref($flags) ? @{$flags} : ($flags);
         $build->extra_linker_flags(@flags, '-l' . $lib);
         if ($lib eq 'kafs') {
             $config->check_header('kafs.h');
