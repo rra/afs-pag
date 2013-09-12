@@ -30,7 +30,7 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <config.h>
+#include <glue/config.h>
 #include <portable/kafs.h>
 #include <portable/system.h>
 
