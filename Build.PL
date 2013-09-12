@@ -135,6 +135,7 @@ my $build = Module::Build->new(
     # Other package relationships.
     configure_requires => {
         'Config::AutoConf' => 0,
+        'Module::Build'    => '0.28',
         perl               => '5.010',
     },
     requires => { perl => '5.010' },
