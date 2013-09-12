@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+# Enable compiler hardening flags.
+export DEB_BUILD_MAINT_OPTIONS = hardening=+bindnow,+pie
+
+%:
+	dh $@
+
+override_dh_installchangelogs:
+	dh_installchangelogs NEWS

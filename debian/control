@@ -1,0 +1,20 @@
+Source: libafs-pag-perl
+Section: perl
+Priority: optional
+Build-Depends: debhelper (>= 9), libconfig-autoconf-perl,
+ libmodule-build-perl, libtest-minimumversion-perl, libtest-pod-perl,
+ libtest-pod-coverage-perl, libtest-strict-perl, libtest-synopsis-perl
+Maintainer: Russ Allbery <rra@debian.org>
+Standards-Version: 3.9.4
+Homepage: http://www.eyrie.org/~eagle/software/afs-pag/
+Vcs-Git: git://git.eyrie.org/afs/afs-pag.git -b debian
+Vcs-Browser: http://git.eyrie.org/?p=afs/afs-pag.git
+
+Package: libafs-pag-perl
+Architecture: any
+Depends: ${perl:Depends}, ${shlib:Depends}, ${misc:Depends}
+Description: Perl bindings for AFS PAG manipulation
+ AFS::PAG provides the standard PAG and token manipulation functions
+ setpag and unlog to Perl programs as a native module.  It also provides
+ the hasafs and haspag functions to detect whether AFS is running and
+ whether the current process is in a PAG.
