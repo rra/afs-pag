@@ -34,3 +34,5 @@ t/style/critic.t
 t/style/minimum-version.t
 t/style/strict.t
 TODO
+META.yml
+META.json
