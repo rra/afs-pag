@@ -28,7 +28,12 @@ use 5.010;
 use strict;
 use warnings;
 
-use IPC::System::Simple qw(capturex systemx);
+use lib 't/lib';
+
+use Test::RRA qw(use_prereq);
+BEGIN { use_prereq('IPC::System::Simple', qw(capturex systemx)) }
+
+# Establish the plan now that we know we're continuing.
 use Test::More tests => 6;
 
 # Load the module.
