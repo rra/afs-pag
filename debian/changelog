@@ -1,3 +1,10 @@
+libafs-pag-perl (1.00-2) unstable; urgency=low
+
+  * Drop PIE from hardening flags.  These don't make sense for a Perl
+    module, and hopefully this change will fix build issues on amd64.
+
+ -- Russ Allbery <rra@debian.org>  Thu, 12 Sep 2013 17:03:47 -0700
+
 libafs-pag-perl (1.00-1) unstable; urgency=low
 
   * Initial version.  (Closes: #722626)
