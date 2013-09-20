@@ -136,9 +136,13 @@ my $build = Module::Build->new(
     configure_requires => {
         'Config::AutoConf' => 0,
         'Module::Build'    => '0.28',
+        autodie            => 0,
         perl               => '5.010',
     },
-    requires => { perl => '5.010' },
+    requires => {
+        autodie => 0,
+        perl    => '5.010',
+    },
 );
 
 # Create the directory that will be used for config.h and stub files.
