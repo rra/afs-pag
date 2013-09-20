@@ -89,6 +89,8 @@ sub config_kafs {
     my $lib = $config->search_libs('k_hasafs', ['kafs', 'kopenafs']);
     my @files;
     if ($lib) {
+        $config->define_var('HAVE_K_HASAFS', 1,
+            'Define to 1 if you have the k_hasafs function.');
         my $flags = $build->extra_linker_flags;
         my @flags = ref($flags) ? @{$flags} : ($flags);
         $build->extra_linker_flags(@flags, '-l' . $lib);
@@ -101,7 +103,10 @@ sub config_kafs {
             $config->define_var('HAVE_K_PIOCTL', 1,
                 'Define to 1 if you have the k_pioctl function');
         }
-        if (!$config->link_if_else($config->lang_call(q{}, 'k_haspag'))) {
+        if ($config->link_if_else($config->lang_call(q{}, 'k_haspag'))) {
+            $config->define_var('HAVE_K_HASPAG', 1,
+                'Define to 1 if you have the k_haspag function');
+        } else {
             @files = qw(portable/k_haspag.c);
         }
     } else {

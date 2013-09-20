@@ -2,6 +2,9 @@
 
 1.01 (unreleased)
 
+    Define the correct preprocessor symbols to build properly if a libkafs
+    or libkopenafs library was found.
+
     Mark autodie required for configure and use for correct automated
     testing behavior on Perl 5.10.0.  (autodie was added to core in
     5.10.1.)
