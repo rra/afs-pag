@@ -1,6 +1,6 @@
                       User-Visible AFS::PAG Changes
 
-1.01 (unreleased)
+AFS::PAG 1.01 (unreleased)
 
     Define the correct preprocessor symbols to build properly if a libkafs
     or libkopenafs library was found.
@@ -9,7 +9,7 @@
     testing behavior on Perl 5.10.0.  (autodie was added to core in
     5.10.1.)
 
-1.00 (2013-09-12)
+AFS::PAG 1.00 (2013-09-12)
 
     Initial public release with support for libkafs, libkopenafs, and
     Linux systems with no support library.  pioctl is not yet supported,
