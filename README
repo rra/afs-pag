@@ -1,4 +1,4 @@
-                              AFS::PAG 1.00
+                              AFS::PAG 1.01
                  (Perl bindings for AFS PAG manipulation)
 
                 Written by Russ Allbery <rra@stanford.edu>
@@ -35,7 +35,7 @@ DESCRIPTION
 
 REQUIREMENTS
 
-  Perl 5.010 or later, the Config::AutoConf module, and a C compiler are
+  Perl 5.10.1 or later, the Config::AutoConf module, and a C compiler are
   required to build this module.  On any platform other than Linux, either
   the kafs library (from Heimdal) or the kopenafs library (from recent
   versions of OpenAFS) are also required.

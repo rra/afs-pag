@@ -1,6 +1,6 @@
                       User-Visible AFS::PAG Changes
 
-AFS::PAG 1.01 (unreleased)
+AFS::PAG 1.01 (2013-10-06)
 
     Define the correct preprocessor symbols to build properly if a libkafs
     or libkopenafs library was found.
