@@ -4,7 +4,7 @@
 # is implemented in XS.  For the actual source, see PAG.xs.  This file
 # contains the bootstrap and export code and the documentation.
 #
-# Written by Russ Allbery <rra@stanford.edu>
+# Written by Russ Allbery <rra@cpan.org>
 # Copyright 2013
 #     The Board of Trustees of the Leland Stanford Junior University
 #
@@ -153,7 +153,7 @@ AFS tokens have to be visible to an external B<aklog> program.
 
 =head1 AUTHOR
 
-Russ Allbery <rra@stanford.edu>
+Russ Allbery <rra@cpan.org>
 
 =head1 SEE ALSO
 

@@ -1,7 +1,7 @@
                               AFS::PAG 1.01
                  (Perl bindings for AFS PAG manipulation)
 
-                Written by Russ Allbery <rra@stanford.edu>
+                  Written by Russ Allbery <rra@cpan.org>
 
   Copyright 2013 The Board of Trustees of the Leland Stanford Junior
   University.  This software is distributed under a BSD-style license.
@@ -91,8 +91,8 @@ SUPPORT
 
       https://rt.cpan.org/Public/Dist/Display.html?Name=AFS-PAG
 
-  I welcome bug reports and patches for this package at rra@stanford.edu
-  or via the CPAN bug tracker.  However, please be aware that I tend to be
+  I welcome bug reports and patches for this package at rra@cpan.org or
+  via the CPAN bug tracker.  However, please be aware that I tend to be
   extremely busy and work projects often take priority.  I'll save your
   mail and get to it as soon as I can, but it may take me a couple of
   months.

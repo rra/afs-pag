@@ -2,7 +2,7 @@
 #
 # Build script for the AFS::PAG distribution.
 #
-# Written by Russ Allbery <rra@stanford.edu>
+# Written by Russ Allbery <rra@cpan.org>
 # Copyright 2013
 #     The Board of Trustees of the Leland Stanford Junior University
 #
@@ -207,7 +207,7 @@ sub config_kafs {
 my $build = Module::Build->new(
     module_name          => 'AFS::PAG',
     dist_version_from    => 'lib/AFS/PAG.pm',
-    dist_author          => 'Russ Allbery <rra@stanford.edu>',
+    dist_author          => 'Russ Allbery <rra@cpan.org>',
     license              => 'mit',
     recursive_test_files => 1,
     add_to_cleanup       => [qw(config.log cover_db glue/*.o)],
