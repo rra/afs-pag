@@ -1,4 +1,5 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Contact: Russ Allbery <eagle@eyrie.org>
 Source: http://www.eyrie.org/~eagle/software/afs-pag/
 
 Files: *
