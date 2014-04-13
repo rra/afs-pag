@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 9), libconfig-autoconf-perl,
  libtest-minimumversion-perl, libtest-pod-perl, libtest-pod-coverage-perl,
  libtest-strict-perl, libtest-synopsis-perl
 Maintainer: Russ Allbery <rra@debian.org>
-Standards-Version: 3.9.4
+Standards-Version: 3.9.5
 Homepage: http://www.eyrie.org/~eagle/software/afs-pag/
 Vcs-Git: git://git.eyrie.org/afs/afs-pag.git -b debian
 Vcs-Browser: http://git.eyrie.org/?p=afs/afs-pag.git
