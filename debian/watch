@@ -1,2 +1,3 @@
 version=3
-http://archives.eyrie.org/software/afs/AFS-PAG-(.*)\.tar\.gz
+opts=pgpsigurlmangle=s/$/.asc/ \
+    http://archives.eyrie.org/software/afs/AFS-PAG-(.*)\.tar\.gz
