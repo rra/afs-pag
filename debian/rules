@@ -5,6 +5,3 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+bindnow
 
 %:
 	dh $@
-
-override_dh_installchangelogs:
-	dh_installchangelogs NEWS

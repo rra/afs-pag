@@ -1,7 +1,9 @@
-libafs-pag-perl (1.01-3) UNRELEASED; urgency=medium
+libafs-pag-perl (1.02-1) UNRELEASED; urgency=medium
 
+  * New upstream release.
   * Add debian/gbp.conf to tell git-buildpackage about the branch layout
     of the repository referenced in Vcs-Git.
+  * Drop now-unnecessary override for dh_installchangelogs.
 
  -- Russ Allbery <rra@debian.org>  Sun, 27 Jul 2014 16:52:02 -0700
 
