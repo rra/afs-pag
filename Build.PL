@@ -3,7 +3,7 @@
 # Build script for the AFS::PAG distribution.
 #
 # Written by Russ Allbery <rra@cpan.org>
-# Copyright 2013
+# Copyright 2013, 2014
 #     The Board of Trustees of the Leland Stanford Junior University
 #
 # Permission is hereby granted, free of charge, to any person obtaining a
@@ -215,6 +215,15 @@ my $build = Module::Build->new(
     # XS configuration.
     c_source             => 'glue',
     extra_compiler_flags => ['-I.'],
+
+    # Additional package metadata.
+    meta_merge => {
+        resources => {
+            repository => 'git://git.eyrie.org/afs/afs-pag.git',
+            bugtracker =>
+              'https://rt.cpan.org/Public/Dist/Display.html?Name=AFS-PAG',
+        },
+    },
 
     # Other package relationships.
     configure_requires => {
