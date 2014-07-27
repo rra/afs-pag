@@ -1,6 +1,6 @@
                       User-Visible AFS::PAG Changes
 
-AFS::PAG 1.02 (2014-07-26)
+AFS::PAG 1.02 (2014-07-27)
 
     Rename NEWS to Changes to match the normal Perl convention.
 
