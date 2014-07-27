@@ -41,7 +41,7 @@ our (@EXPORT_OK, $VERSION);
 # Set all import-related variables in a BEGIN block for robustness.
 BEGIN {
     @EXPORT_OK = qw(hasafs haspag setpag unlog);
-    $VERSION   = '1.01';
+    $VERSION   = '1.02';
 }
 
 # Load the binary module.
