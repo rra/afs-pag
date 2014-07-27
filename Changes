@@ -7,6 +7,12 @@ AFS::PAG 1.02 (2014-07-26)
     Add repository and bugtracker information in the distribution
     metadata.
 
+    Update to rra-c-util 5.5:
+
+    * Use Lancaster Consensus environment variables to control tests.
+    * Work around perltidy bug that leaves behind stray log files.
+    * Use calloc or reallocarray for protection against integer overflows.
+
 AFS::PAG 1.01 (2013-10-06)
 
     Define the correct preprocessor symbols to build properly if a libkafs
