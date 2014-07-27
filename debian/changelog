@@ -4,6 +4,7 @@ libafs-pag-perl (1.02-1) UNRELEASED; urgency=medium
   * Add debian/gbp.conf to tell git-buildpackage about the branch layout
     of the repository referenced in Vcs-Git.
   * Drop now-unnecessary override for dh_installchangelogs.
+  * Drop now-unnecessary debian/source/options to force xz compression.
 
  -- Russ Allbery <rra@debian.org>  Sun, 27 Jul 2014 16:52:02 -0700
 
