@@ -2,8 +2,8 @@
 #
 # Build script for the AFS::PAG distribution.
 #
-# Written by Russ Allbery <rra@stanford.edu>
-# Copyright 2013
+# Written by Russ Allbery <rra@cpan.org>
+# Copyright 2013, 2014
 #     The Board of Trustees of the Leland Stanford Junior University
 #
 # Permission is hereby granted, free of charge, to any person obtaining a
@@ -207,7 +207,7 @@ sub config_kafs {
 my $build = Module::Build->new(
     module_name          => 'AFS::PAG',
     dist_version_from    => 'lib/AFS/PAG.pm',
-    dist_author          => 'Russ Allbery <rra@stanford.edu>',
+    dist_author          => 'Russ Allbery <rra@cpan.org>',
     license              => 'mit',
     recursive_test_files => 1,
     add_to_cleanup       => [qw(config.log cover_db glue/*.o)],
@@ -215,6 +215,15 @@ my $build = Module::Build->new(
     # XS configuration.
     c_source             => 'glue',
     extra_compiler_flags => ['-I.'],
+
+    # Additional package metadata.
+    meta_merge => {
+        resources => {
+            repository => 'git://git.eyrie.org/afs/afs-pag.git',
+            bugtracker =>
+              'https://rt.cpan.org/Public/Dist/Display.html?Name=AFS-PAG',
+        },
+    },
 
     # Other package relationships.
     configure_requires => {

@@ -1,10 +1,10 @@
 {
    "abstract" : "Perl bindings for AFS PAG manipulation",
    "author" : [
-      "Russ Allbery <rra@stanford.edu>"
+      "Russ Allbery <rra@cpan.org>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.4007, CPAN::Meta::Converter version 2.132510",
+   "generated_by" : "Module::Build version 0.4003, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "mit"
    ],
@@ -37,14 +37,20 @@
    "provides" : {
       "AFS::PAG" : {
          "file" : "lib/AFS/PAG.pm",
-         "version" : "1.01"
+         "version" : "1.02"
       }
    },
    "release_status" : "stable",
    "resources" : {
+      "bugtracker" : {
+         "web" : "https://rt.cpan.org/Public/Dist/Display.html?Name=AFS-PAG"
+      },
       "license" : [
-         "http://www.opensource.org/licenses/mit-license.php"
-      ]
+         "http://opensource.org/licenses/mit-license.php"
+      ],
+      "repository" : {
+         "url" : "git://git.eyrie.org/afs/afs-pag.git"
+      }
    },
-   "version" : "1.01"
+   "version" : "1.02"
 }
