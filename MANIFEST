@@ -1,5 +1,6 @@
 .gitignore
 Build.PL
+Changes
 kafs/kafs.c
 kafs/sys-darwin10.c
 kafs/sys-darwin8.c
@@ -11,7 +12,6 @@ lib/AFS/PAG.xs
 LICENSE
 MANIFEST			This list of files
 MANIFEST.SKIP
-NEWS
 portable/k_haspag.c
 portable/kafs.h
 portable/macros.h

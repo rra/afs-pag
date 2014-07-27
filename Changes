@@ -1,5 +1,12 @@
                       User-Visible AFS::PAG Changes
 
+AFS::PAG 1.02 (2014-07-26)
+
+    Rename NEWS to Changes to match the normal Perl convention.
+
+    Add repository and bugtracker information in the distribution
+    metadata.
+
 AFS::PAG 1.01 (2013-10-06)
 
     Define the correct preprocessor symbols to build properly if a libkafs
