@@ -3,5 +3,8 @@
 # Enable compiler hardening flags.
 export DEB_BUILD_MAINT_OPTIONS = hardening=+bindnow
 
+# Enable some additional testing.
+export AUTOMATED_TESTING := 1
+
 %:
 	dh $@
