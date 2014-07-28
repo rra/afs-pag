@@ -1,4 +1,4 @@
-libafs-pag-perl (1.02-1) UNRELEASED; urgency=medium
+libafs-pag-perl (1.02-1) unstable; urgency=medium
 
   * New upstream release.
   * Add debian/gbp.conf to tell git-buildpackage about the branch layout
@@ -6,7 +6,7 @@ libafs-pag-perl (1.02-1) UNRELEASED; urgency=medium
   * Drop now-unnecessary override for dh_installchangelogs.
   * Drop now-unnecessary debian/source/options to force xz compression.
 
- -- Russ Allbery <rra@debian.org>  Sun, 27 Jul 2014 16:52:02 -0700
+ -- Russ Allbery <rra@debian.org>  Sun, 27 Jul 2014 17:10:18 -0700
 
 libafs-pag-perl (1.01-2) unstable; urgency=medium
 
